@@ -1,1 +1,1 @@
-# Kame_Python
+# かめPython入門講座用
