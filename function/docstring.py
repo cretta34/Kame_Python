@@ -28,4 +28,4 @@ def dividend(num1, num2):
     return num1 / num2
 
 
-dividend()
+print(dividend(4, 2))
