@@ -9,8 +9,8 @@ def multiply(num1, num2):
     return num1 * num2
 
 
-print(multiply.__doc__)
-help(multiply)
+# print(multiply.__doc__)
+# help(multiply)
 
 
 # Google style
@@ -28,4 +28,4 @@ def dividend(num1, num2):
     return num1 / num2
 
 
-print(dividend(4, 2))
+# print(dividend(4, 2))
