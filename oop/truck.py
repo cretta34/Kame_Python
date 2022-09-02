@@ -1,4 +1,3 @@
-# challenge
 from car import Car
 
 
@@ -7,6 +6,13 @@ class Truck(Car):
         super().__init__(model_name, mileage, manufacturer)
         self._max_loadings = max_loadings
         self._loadings = 0
+
+    def gas(self):
+        if self._loadings > self._max_loadings:
+            print("重量オーバーなので走れません")
+            print(f"最低でも{self._loadings - self._max_loadings}tの荷物を降ろしてください")
+        else:
+            super().gas()
 
     def load(self, weight):
         if weight > 0:
@@ -31,4 +37,5 @@ if __name__ == "__main__":
     isuzu_truck.load(5)
     isuzu_truck.load(-3)
     isuzu_truck.load(10)
+    isuzu_truck.gas()
     isuzu_truck.load(-30)
